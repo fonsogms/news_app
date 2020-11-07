@@ -1,6 +1,10 @@
 import React from "react";
 import { Image, Text, View } from "react-native";
 import { Icon } from "react-native-elements";
+import {
+  TouchableHighlight,
+  TouchableOpacity,
+} from "react-native-gesture-handler";
 
 const Navbar = () => {
   return (
@@ -20,30 +24,87 @@ const Navbar = () => {
       }}
     >
       <View style={{ flexDirection: "row" }}>
-        <Image
-          style={{ width: "16%", height: 50, resizeMode: "cover" }}
-          source={require("../assets/business1600.png")}
-        />
-        <Image
-          style={{ width: "16%", height: 50, resizeMode: "cover" }}
-          source={require("../assets/business1600.png")}
-        />
-        <Image
-          style={{ width: "16%", height: 50, resizeMode: "cover" }}
-          source={require("../assets/business1600.png")}
-        />
-        <Image
-          style={{ width: "16%", height: 50, resizeMode: "cover" }}
-          source={require("../assets/business1600.png")}
-        />
-        <Image
-          style={{ width: "16%", height: 50, resizeMode: "cover" }}
-          source={require("../assets/business1600.png")}
-        />
-        <Image
-          style={{ width: "16%", height: 50, resizeMode: "cover" }}
-          source={require("../assets/business1600.png")}
-        />
+        <View style={{ flex: 1, margin: 10 }}>
+          <TouchableOpacity>
+            <Image
+              style={{ width: "100%", height: 40, resizeMode: "contain" }}
+              source={require("../assets/business.png")}
+            />
+          </TouchableOpacity>
+        </View>
+        <View style={{ flex: 1, margin: 10 }}>
+          <TouchableOpacity>
+            <Image
+              style={{
+                width: "100%",
+                height: 40,
+                resizeMode: "contain",
+              }}
+              source={require("../assets/img_534831.png")}
+            />
+          </TouchableOpacity>
+        </View>
+
+        <View style={{ flex: 1, margin: 10 }}>
+          <TouchableOpacity>
+            <Image
+              style={{
+                width: "100%",
+                height: 40,
+                resizeMode: "contain",
+              }}
+              source={require("../assets/iconfinder_Soccer_2138356.png")}
+            />
+          </TouchableOpacity>
+        </View>
+        <View style={{ flex: 1, margin: 10 }}>
+          <TouchableOpacity>
+            <Image
+              style={{
+                width: "100%",
+                height: 40,
+                resizeMode: "contain",
+              }}
+              source={require("../assets/home.png")}
+            />
+          </TouchableOpacity>
+        </View>
+        <View style={{ flex: 1, margin: 10 }}>
+          <TouchableOpacity>
+            <Image
+              style={{
+                width: "100%",
+                height: 40,
+                resizeMode: "contain",
+              }}
+              source={require("../assets/health.png")}
+            />
+          </TouchableOpacity>
+        </View>
+        <View style={{ flex: 1, margin: 10 }}>
+          <TouchableOpacity>
+            <Image
+              style={{
+                width: "100%",
+                height: 40,
+                resizeMode: "contain",
+              }}
+              source={require("../assets/star.png")}
+            />
+          </TouchableOpacity>
+        </View>
+        <View style={{ flex: 1, margin: 10 }}>
+          <TouchableOpacity>
+            <Image
+              style={{
+                width: "100%",
+                height: 40,
+                resizeMode: "contain",
+              }}
+              source={require("../assets/tech.png")}
+            />
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
