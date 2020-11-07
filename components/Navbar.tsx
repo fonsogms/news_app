@@ -17,8 +17,9 @@ const Navbar = () => {
         shadowRadius: 2.22,
 
         elevation: 3,
-        borderBottomColor: "#e8e8e8",
-        borderBottomWidth: 2,
+
+        borderTopColor: "#e8e8e8",
+        borderTopWidth: 1,
       }}
     >
       <View style={{ flexDirection: "row", alignItems: "center" }}>
