@@ -1,7 +1,7 @@
 import React from "react";
 import { Image, Text, View } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
-
+import * as RootNavigation from "../RootNavigation";
 const Navbar = () => {
   return (
     <View
@@ -29,7 +29,11 @@ const Navbar = () => {
             margin: 10,
           }}
         >
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              RootNavigation.navigate("Business", { category: "business" });
+            }}
+          >
             <Image
               style={{ width: "100%", height: 40, resizeMode: "contain" }}
               source={require("../assets/business.png")}
@@ -50,7 +54,11 @@ const Navbar = () => {
             margin: 10,
           }}
         >
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              RootNavigation.navigate("Science", { category: "science" });
+            }}
+          >
             <Image
               style={{
                 width: "100%",
@@ -70,7 +78,11 @@ const Navbar = () => {
           }}
         ></View>
         <View style={{ flex: 1, margin: 10 }}>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              RootNavigation.navigate("Sports", { category: "sports" });
+            }}
+          >
             <Image
               style={{
                 width: "100%",
@@ -90,7 +102,11 @@ const Navbar = () => {
           }}
         ></View>
         <View style={{ flex: 1, margin: 10 }}>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              RootNavigation.navigate("Home", { category: "general" });
+            }}
+          >
             <Image
               style={{
                 width: "100%",
@@ -110,7 +126,11 @@ const Navbar = () => {
           }}
         ></View>
         <View style={{ flex: 1, margin: 10 }}>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              RootNavigation.navigate("Health", { category: "health" });
+            }}
+          >
             <Image
               style={{
                 width: "100%",
@@ -130,7 +150,13 @@ const Navbar = () => {
           }}
         ></View>
         <View style={{ flex: 1, margin: 10 }}>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              RootNavigation.navigate("Entertainment", {
+                category: "entertainment",
+              });
+            }}
+          >
             <Image
               style={{
                 width: "100%",
@@ -150,7 +176,13 @@ const Navbar = () => {
           }}
         ></View>
         <View style={{ flex: 1, margin: 10 }}>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              RootNavigation.navigate("Technology", {
+                category: "technology",
+              });
+            }}
+          >
             <Image
               style={{
                 width: "100%",
