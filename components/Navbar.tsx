@@ -1,16 +1,12 @@
 import React from "react";
 import { Image, Text, View } from "react-native";
-import { Icon } from "react-native-elements";
-import {
-  TouchableHighlight,
-  TouchableOpacity,
-} from "react-native-gesture-handler";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 const Navbar = () => {
   return (
     <View
       style={{
-        height: "10%",
+        height: "8%",
         backgroundColor: "white",
         shadowColor: "#000",
         shadowOffset: {
@@ -21,10 +17,17 @@ const Navbar = () => {
         shadowRadius: 2.22,
 
         elevation: 3,
+        borderBottomColor: "#e8e8e8",
+        borderBottomWidth: 2,
       }}
     >
-      <View style={{ flexDirection: "row" }}>
-        <View style={{ flex: 1, margin: 10 }}>
+      <View style={{ flexDirection: "row", alignItems: "center" }}>
+        <View
+          style={{
+            flex: 1,
+            margin: 10,
+          }}
+        >
           <TouchableOpacity>
             <Image
               style={{ width: "100%", height: 40, resizeMode: "contain" }}
@@ -32,7 +35,20 @@ const Navbar = () => {
             />
           </TouchableOpacity>
         </View>
-        <View style={{ flex: 1, margin: 10 }}>
+        <View
+          style={{
+            flex: 0.1,
+            borderRightColor: "#e8e8e8",
+            borderRightWidth: 2,
+            height: "70%",
+          }}
+        ></View>
+        <View
+          style={{
+            flex: 1,
+            margin: 10,
+          }}
+        >
           <TouchableOpacity>
             <Image
               style={{
@@ -44,7 +60,14 @@ const Navbar = () => {
             />
           </TouchableOpacity>
         </View>
-
+        <View
+          style={{
+            flex: 0.1,
+            borderRightColor: "#e8e8e8",
+            borderRightWidth: 2,
+            height: "70%",
+          }}
+        ></View>
         <View style={{ flex: 1, margin: 10 }}>
           <TouchableOpacity>
             <Image
@@ -57,6 +80,14 @@ const Navbar = () => {
             />
           </TouchableOpacity>
         </View>
+        <View
+          style={{
+            flex: 0.1,
+            borderRightColor: "#e8e8e8",
+            borderRightWidth: 2,
+            height: "70%",
+          }}
+        ></View>
         <View style={{ flex: 1, margin: 10 }}>
           <TouchableOpacity>
             <Image
@@ -69,6 +100,14 @@ const Navbar = () => {
             />
           </TouchableOpacity>
         </View>
+        <View
+          style={{
+            flex: 0.1,
+            borderRightColor: "#e8e8e8",
+            borderRightWidth: 2,
+            height: "70%",
+          }}
+        ></View>
         <View style={{ flex: 1, margin: 10 }}>
           <TouchableOpacity>
             <Image
@@ -81,6 +120,14 @@ const Navbar = () => {
             />
           </TouchableOpacity>
         </View>
+        <View
+          style={{
+            flex: 0.1,
+            borderRightColor: "#e8e8e8",
+            borderRightWidth: 2,
+            height: "70%",
+          }}
+        ></View>
         <View style={{ flex: 1, margin: 10 }}>
           <TouchableOpacity>
             <Image
@@ -93,6 +140,14 @@ const Navbar = () => {
             />
           </TouchableOpacity>
         </View>
+        <View
+          style={{
+            flex: 0.1,
+            borderRightColor: "#e8e8e8",
+            borderRightWidth: 2,
+            height: "70%",
+          }}
+        ></View>
         <View style={{ flex: 1, margin: 10 }}>
           <TouchableOpacity>
             <Image
